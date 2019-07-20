@@ -30,71 +30,18 @@
 	</style>
 </head>
 <body>
-	
-  
-  	<div class="top-bar-guidance" style="display:none" id="top-bar-guidance">
-		<p>
-			点击右上角<img src="//gw.alicdn.com/tfs/TB1xwiUNpXXXXaIXXXXXXXXXXXX-55-55.png" class="icon-safari"/> Safari打开
-		</p>
-		<p>
-			可以继续访问本站哦~
-		</p>
-        <a class="app-download-btn" id="BtnClick" href="javascript:;"> 点此继续访问 </a>
-	</div>
-  
-  	<div class="top-guidance">
-		<p>
-			wxoauth微信强制跳转试用接口，5分钟后失效。
-		</p>
-		<p>
-          正式版直接跳转目标域名不显示此层。</br>客服QQ：<b>3128699742</b>
-		</p>
-	</div>
-	
-	
- <script>
-   			debugger
-   			var url = 'https://zgflcpw.github.io/xt/zgflcpw.apk';
-   			document.querySelector('body').addEventListener('touchmove', function (event) {
-   				event.preventDefault();
-   			});
-   			window.mobileUtil = (function(win, doc) {
-   				var UA = navigator.userAgent,
-   				isAndroid = /android|adr/gi.test(UA),
-   				isIOS = /iphone|ipod|ipad/gi.test(UA) && !isAndroid,
-   				isBlackBerry = /BlackBerry/i.test(UA),
-   				isWindowPhone = /IEMobile/i.test(UA),
-   				isMobile = isAndroid || isIOS || isBlackBerry || isWindowPhone;
-   				return {
-   					isAndroid: isAndroid,
-   					isIOS: isIOS,
-   					isMobile: isMobile,
-   					isWeixin: /MicroMessenger/gi.test(UA),
-   					isQQ: /QQ/gi.test(UA)
-   				};
-   			})(window, document);
-   			if(mobileUtil.isWeixin){
-   				if(mobileUtil.isIOS){
-   					var ui = document.getElementById("top-bar-guidance");
-     				ui.style.display="block";
-   					document.getElementById('BtnClick').href=url;
-   				}else if(mobileUtil.isAndroid){
-                  	debugger
-   					url = '?open=1';
-   					document.getElementById('BtnClick').href=url;
-   					var iframe = document.createElement('iframe'); 
-                    iframe.src=url;  
-                    document.body.appendChild(iframe);
-                    setTimeout('WeixinJSBridge.invoke("closeWindow", {}, function(e) {})',2000);
-   				}
-   			}else{
-              var iframe = document.createElement('iframe'); 
-              iframe.src=url;  
-              document.body.appendChild(iframe);
-              setTimeout('WeixinJSBridge.invoke("closeWindow", {}, function(e) {})',2000);
-   			}
-   			
-           //setTimeout('WeixinJSBridge.invoke("closeWindow", {}, function(e) {})',2000);
-        </script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5d3277c76d80831228391cd9/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 </body>
 </html>
