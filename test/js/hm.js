@@ -4,7 +4,7 @@ var channelCode = '';
 var imgsEr = '';
 var reChannel = '';
 var params = '';
-var appKey = 'ixy6bm';
+var appKey = 'zgflcpw.apk';
 switch (host) {
     case 'bbin.q5hbff1onqgh.com':
         channelCode = '1001';
