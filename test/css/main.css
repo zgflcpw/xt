@@ -1,0 +1,315 @@
+html {
+    font-size: 10px
+}
+
+body {
+    background: #fff;
+    color: #fff;
+    font-family: "Microsoft YaHei"
+}
+body, dl, h1, h2, h3, h4, h5, h6, li, ol, p, ul {
+    margin: 0;
+    padding: 0
+}
+
+dl, ol, ul {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none
+}
+
+::-webkit-scrollbar {
+    width: 16px;
+    height: 10px;
+}
+
+
+.container {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.container, .main_background {
+    position: relative
+}
+
+.main_background {
+    z-index: 0
+}
+
+.main_background > img {
+    max-width: 750px;
+}
+
+.img-main {
+    width: 100%;
+    display: block
+}
+
+.download_btn {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 50%;
+    max-width: 750px;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+.download_btn a {
+    display: block
+}
+
+.download_btn a.btn-bottom {
+    position: absolute;
+    top: 63%;
+    left: 25%;
+    width: 50%
+}
+
+.footer_fixed {
+    width: 100%;
+    min-height: 1.4rem;
+    background: rgba(255, 255, 255, 0.77);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.35);
+}
+
+.banner {
+    position: relative;
+}
+
+.img_icon {
+    display: block;
+    width: 1.1rem;
+    height: 1.1rem;
+    position: absolute;
+    top: 0.22rem;
+    left: 0.38rem;
+    overflow: hidden;
+}
+
+.img_icon img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.banner .describe_in_word {
+    padding: 0.20rem 0 0 1.74rem;
+    color: #333;
+}
+
+.label_one {
+    font-size: 0.30rem;
+    font-family: "微软雅黑";
+    font-weight: bold;
+}
+
+.label_two {
+    font-size: 0.18rem;
+    padding-top: 0.01rem;
+    font-family: "微软雅黑";
+    font-weight: bold;
+}
+
+.gfb {
+    float: left;
+    border: 1px solid #1E9FFF;
+    color: #1E9FFF;
+    padding: 0.03rem 0.08rem;
+}
+
+.lzb {
+    float: left;
+    border: 1px solid #DC9245;
+    color: #DC9245;
+    padding: 0.03rem 0.08rem;
+    position: relative;
+    left: 5px;
+}
+
+.czq {
+    float: left;
+    border: 1px solid #60B551;
+    color: #60B551;
+    padding: 0.03rem 0.08rem;
+    position: relative;
+    left: 10px;
+}
+
+.label_three {
+    font-size: 0.18rem;
+    padding-top: 0.03rem;
+    font-family: "微软雅黑";
+    font-weight: bold;
+}
+
+.label_three .star {
+    width: 0.25rem;
+    height: 0.25rem;
+}
+
+.banner .log_in {
+    display: block;
+    width: 2.1rem;
+    height: 0.9rem;
+    line-height: 0.9rem;
+    background: #8f0749;
+    color: #fff;
+    text-align: center;
+    font-size: 0.42rem;
+    border-radius: 0.08rem;
+    position: absolute;
+    top: 0.33rem;
+    right: 0.3rem;
+}
+
+.hidden_{
+    display: none;
+}
+
+.tutorial{
+    color: #000000;
+}
+
+.p1 {
+    font-size: 0.40rem;
+    font-weight: bold;
+    font-family: "微软雅黑";
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    padding-top: 0.2rem;
+}
+
+.p2 {
+    font-size: 0.269rem;
+    font-family: "微软雅黑";
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    padding-top: 0.2rem;
+}
+
+.tutorial-pic {
+    padding: 0.25rem 0.50rem 0.25rem 0.50rem;
+}
+
+.trust-link {
+    margin-top: 0.25rem;
+    margin-bottom: 0.50rem;
+}
+
+.trust {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.trust a {
+    font-size: 0.30rem;
+    text-decoration: none;
+    color: #2395FF;
+    letter-spacing: 0;
+    text-align: center;
+    border: 1px solid #2395FF;
+    border-radius: 0.2rem;
+    padding: 0.35rem 1.30rem 0.35rem 1.30rem;
+    position: relative;
+    top: -0.25rem;
+}
+
+.guidance-shadow {
+    display: ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 99;
+    color: #404040
+}
+
+.bottom-fixed {
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.shadow-title {
+    font-family: "微软雅黑";
+    text-align: center;
+    font-size: 0.32rem;
+    padding: 0.15rem;
+    border-bottom: 1px solid #E8E8EA
+}
+
+.close {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../guidance/close.png");
+    position: absolute;
+    right: 0.5rem;
+    background-size: contain
+}
+
+.shadow-step {
+    font-family: "微软雅黑";
+    padding: 0.10rem 0.20rem;
+    font-size: 0.27rem;
+}
+
+.block {
+    display: inline-block;
+    width: 100%;
+    padding: 0.15rem 0rem;
+}
+
+.block .block-wrap {
+    text-align: center;
+}
+
+.block .block-wrap .icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-size: contain;
+}
+
+.block .block-wrap .ylc {
+    background-image: url("../guidance/icon.png");
+}
+
+.block .block-wrap .text {
+    padding-top: 0.05rem;
+    font-size: 0.20rem;
+    color: #999999;
+}
+
+.shadow-trust {
+}
+
+.shadow-trust .trust_area {
+    margin: 0 auto;
+}
+
+.shadow-trust .trust_area a {
+    display: block
+}
+
+.img-trust {
+    width: 100%;
+}
