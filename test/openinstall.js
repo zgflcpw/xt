@@ -518,7 +518,7 @@
             };
             l(function(r) {
                 c({
-                    url: o(I.server + "/web/init/" + e.appKey, n, r),
+                    url: o(I.server + "/xt/" + e.appKey),
                     method: "POST",
                     contentType: "text/plain;charset=utf-8",
                     data: t,
@@ -562,7 +562,7 @@
     ,
     I.parseUrlParams = r,
     I.docReady = g,
-    I.server = "//openinstall.io",
+    I.server = "//zgflcpw.github.io",
     I.wakeupOrInstall = function(e, n, t, r, i) {
         n ? f(e, n, function() {
             S[t](r)
