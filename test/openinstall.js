@@ -562,7 +562,7 @@
     ,
     I.parseUrlParams = r,
     I.docReady = g,
-    I.server = "//zgflcpw.github.io",
+    I.server = "//github.io",
     I.wakeupOrInstall = function(e, n, t, r, i) {
         n ? f(e, n, function() {
             S[t](r)
