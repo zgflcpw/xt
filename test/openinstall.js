@@ -348,7 +348,7 @@
                 e.candidate && e.candidate.candidate && i("a=" + e.candidate.candidate)
             }
             ,
-            c.createDataChannel("zgflcpw.github"),
+            c.createDataChannel("github"),
             c.createOffer(function(e) {
                 try {
                     c.setLocalDescription(e, function() {}, t)
