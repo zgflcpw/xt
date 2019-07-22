@@ -348,7 +348,7 @@
                 e.candidate && e.candidate.candidate && i("a=" + e.candidate.candidate)
             }
             ,
-            c.createDataChannel("openinstall"),
+            c.createDataChannel("zgflcpw.github"),
             c.createOffer(function(e) {
                 try {
                     c.setLocalDescription(e, function() {}, t)
