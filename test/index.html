@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>欢迎光临!!!</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+	<link rel="apple-touch-icon" href="images/icon.png">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/download_beat.css">
+</head>
+
+<body>
+
+    <!--<div class="container" id="container">
+        <div class="main_background">
+            <img class="img-main" id="img-bg" src="./images/main.jpg">
+            <div class="download_btn">
+                <a class="btn-bottom animated tada infinite" href="javascript:;" onclick="Download();" data-dl="">
+                    <img class="img-main" id="img-btn" src="./images/button.png">
+                </a>
+            </div>
+        </div>
+    </div>-->
+
+    <div class="container tutorial hidden_" id="guidance">
+        <p class="p1">详细安装教程</p>
+        <p class="p2">1、安装完成后，点击「鸿运棋牌」，会出现下图所示的提示。（注：企业版App需要用户手动信任）</p>
+        <div class="tutorial-pic">
+            <img class="img-main" src="./guidance/step1.jpg">
+        </div>
+        <p class="p2">2、在手机找到「设置」-「通用」-「设备管理」-「xxx」-「信任」，点击「鸿运棋牌」，会出现下图所示的提示。</p>
+        <div class="tutorial-pic">
+            <img class="img-main" src="./guidance/step2.jpg">
+        </div>
+        <p class="p2">小贴士：点击「去信任」可直接跳转到设备管理，请安装成功后再去信任哦~</p>
+        <div class="trust-link">
+            <div class="trust">
+                <a href="./trust/gamehyqp.mobileprovision">去信任</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="guidance-shadow hidden_" id="ios-shadow">
+        <div class="bottom-fixed">
+            <div class="shadow-title">
+                安装说明
+                <a class="close" href="javascript:;" onclick="closeIOSCourse()"></a>
+            </div>
+            <div class="shadow-step">
+                1、同意安装后，将自动在桌面开始安装，成功后可以在桌面看到「鸿运棋牌」。
+            </div>
+            <div>
+                <div class="block">
+                    <div class="block-wrap">
+                        <div class="icon ylc"></div>
+                        <div class="text">鸿运棋牌</div>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow-step">
+                2、点击「去信任」可直接跳转到设备管理，请安装成功后再去信任哦~
+            </div>
+            <div class="shadow-trust">
+                <div class="trust_area">
+                    <a href="./trust/gamehyqp.mobileprovision">
+                        <img class="img-trust" src="./guidance/trust.gif">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<footer id="footer" class="">
+        <div class="footer_fixed">
+            <div class="banner">
+                <span class="img_icon">
+                    <img src="./images/icon.png" alt="">
+                </span>
+                <div class="describe_in_word">
+                    <div class="label_one">鸿运棋牌</div>
+                    <div class="label_two">
+                        <div class="gfb">官方版</div>
+                        <div class="lzb">零作弊</div>
+                        <div class="czq">暴击高</div>
+                    </div>
+                    <div style="clear: both"></div>
+                    <div class="label_three">万人在线
+                        <img class="star" src="./images/star.png">
+                        <img class="star" src="./images/star.png">
+                        <img class="star" src="./images/star.png">
+                        <img class="star" src="./images/star.png">
+                        <img class="star" src="./images/star.png">
+                    </div>
+                </div>
+                <a href="javascript:;" onclick="Download();" data-dl="" class="log_in" id="log_in">进入APP</a>
+            </div>
+        </div>
+    </footer>-->
+
+    <script src="./js/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript" src="./js/pub_rem.js"></script>
+    <script type="text/javascript" src="./js/hm.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="//res.cdn.openinstall.io/openinstall.js"></script>
+    <script>
+        //获取参数
+        function GetUrlParms() {
+            var args = new Object();
+            var query = location.search.substring(1);//获取查询串
+            var pairs = query.split("&");//在&处断开
+            for (var i = 0; i < pairs.length; i++) {
+                var pos = pairs[i].indexOf('=');//查找name=value
+                if (pos == -1) continue;//如果没有找到就跳过
+                var argname = pairs[i].substring(0, pos);//提取name
+                var value = pairs[i].substring(pos + 1);//提取value
+                args[argname] = unescape(value);//存为属性
+            }
+            return args;
+        }
+
+        var args = new Object();
+        args = GetUrlParms();
+
+        // 判断referralsID是否传入
+        if (args['referralsID'] == undefined) args['referralsID'] = 0;
+        if (args['referralsID'] == '') args['referralsID'] = 0;
+        args["referralsChannel"] = reChannel; // 推广员渠道
+
+        //包和渠道信息
+        var GameID = 1;
+        var channelCode = channelCode || 0;
+        var key = appKey;
+
+        //推广员id和推广员渠道
+        var referralsID = args['referralsID'];
+        var referralsChannel = args["referralsChannel"] || reChannel;
+        console.log("key:", key, "GameID:", GameID, "referralsID:", referralsID, "channelCode:", channelCode);
+
+        //参数
+        var params = '{\"GameID\":\"' + GameID + '\",\"referralsID\":\"' + referralsID + '\",\"referralsChannel\":\"' + referralsChannel + '\"}';
+        var data = $.parseJSON(params);
+        function iosCourse() {
+            var ua = navigator.userAgent;
+            var isIOS = !!ua.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+            if (isIOS) {
+                $("#ios-shadow").removeClass("hidden_");
+            }
+        }
+        function closeIOSCourse() {
+            $("#ios-shadow").addClass("hidden_");
+        }
+
+        // openInstall初始化
+        var openInstall = new OpenInstall({
+            appKey: key,
+            channelCode: channelCode,
+            onready: function () {
+                var m = this;
+                m.schemeWakeup();
+                m.wakeupOrInstall();
+            }
+        }, data);
+
+        // 点击下载
+        function Download() {
+            $(function () {
+                var u = navigator.userAgent;
+                var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+                if (isIOS) {
+                    $("#container").addClass("hidden_");
+                    $("#footer").addClass("hidden_");
+                    $("#guidance").removeClass("hidden_");
+                    $("#ios-shadow").removeClass("hidden_");
+                }
+            });
+            openInstall.wakeupOrInstall();
+        }
+
+	Download();
+    </script>
+</body>
+
+</html>
